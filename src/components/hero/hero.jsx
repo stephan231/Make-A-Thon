@@ -20,7 +20,7 @@ const hero = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://ieeesjcesbc.org/registeration-form/");
+    window.open("https://forms.gle/JxS4MyFuCCF6fgjB9");
   };
   const handleCardClicks = (card) => {
     ReactGA.event({
@@ -96,7 +96,7 @@ const hero = () => {
         {/* <div className="progress_bar"></div> */}
         <div className=" tag-hero-mobile">
           <img
-            src="/images/sjce.png"
+            src="./images/sjce.png"
             alt="SJCE logo"
             width="60vw"
             className="hero-srm-logo"
@@ -108,7 +108,7 @@ const hero = () => {
             Group of Institution
           </div>
           <img
-            src="/images/EEE.png"
+            src="./images/EEE.png"
             alt="srmvec logo"
             width="60vw"
             className="hero-srmvec-logo"

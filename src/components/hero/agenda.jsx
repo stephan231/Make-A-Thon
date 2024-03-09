@@ -32,7 +32,7 @@ const section2 = () => {
       <div className="section2">
         <div className="agenda" id="agenda">
           <div className="title2">
-            <img src="/images/rrr.webp" alt="arrow-logo" />
+            <img src="./images/rrr.webp" alt="arrow-logo" />
             <h1 className="title-name">Agenda</h1>
           </div>
           <div className="agenda-text">
@@ -69,7 +69,7 @@ const section2 = () => {
           <div className="vision">
             <div className="about-vision-title " id="agenda-left">
               <img
-                src="/images/vision.webp"
+                src="./images/vision.webp"
                 alt="vision-image"
                 width="300px"
                 className="about-vision-image"
@@ -91,7 +91,7 @@ const section2 = () => {
           <div className="mission">
             <div className="about-mission-title" id="agenda-right">
               <img
-                src="/images/target.webp"
+                src="./images/target.webp"
                 alt="mission-image"
                 width={"250px"}
                 className="about-mission-image"

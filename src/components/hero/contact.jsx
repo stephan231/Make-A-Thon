@@ -27,7 +27,7 @@ const contact = () => {
     <React.Fragment>
       <div id="contact" className="parent-contact">
         <div className="contact-title">
-          <img src="/images/rrr.webp" alt="arrow-logo" />
+          <img src="./images/rrr.webp" alt="arrow-logo" />
           Contacts Us
         </div>
         <div className="parent-container">
@@ -36,7 +36,7 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card">
                 <div className="contact-card-front">
-                  <img src="/images/vishnu.JPG" alt="vishnu" />
+                  <img src="./images/vishnu.JPG" alt="vishnu" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Vishnu M</h1>
                     <h2 className="contact-card-description">
@@ -66,7 +66,7 @@ const contact = () => {
                           handleLaunch("contact-card-launch1");
                           setTimeout(() => {
                             window.open(
-                              "https://api.whatsapp.com/send?phone=9342536372"
+                              "https://ama.whatsapp.com/send?phone=9342536372"
                             );
                           }, 2000);
                         }}
@@ -193,7 +193,7 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card1">
                 <div className="contact-card-front">
-                  <img src="/images/Srinivas.JPG" alt="srinivas" />
+                  <img src="./images/Srinivas.JPG" alt="srinivas" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Srinivas R</h1>
                     <h2 className="contact-card-description">

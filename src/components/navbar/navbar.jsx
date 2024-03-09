@@ -53,7 +53,7 @@ const Navbar = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://ieeesjcesbc.org/registeration-form/");
+    window.open("https://forms.gle/JxS4MyFuCCF6fgjB9");
   };
   const handleScroll = (id) => {
     ReactGA.event({
@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="parent">
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
-            <img src="/images/diamond.webp" className="logo" alt="Logo" />
+            <img src="./images/diamond.webp" className="logo" alt="Logo" />
             MAKE-A-THON
             <div className="socials">
               <div className="insta">
@@ -172,7 +172,7 @@ const Navbar = () => {
               className="title-mobile"
               onClick={() => window.open("/", "_self")}
             >
-              <img src="/images/diamond.webp" width="30vw" alt="logo" />
+              <img src="./images/diamond.webp" width="30vw" alt="logo" />
               Hackathon
             </div>
             <div className="last-mobile">
