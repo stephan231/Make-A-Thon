@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     viteSvgr({
       svgrOptions: {},
-      base: "/MAKE-A-THON/",
+      base: "/Make-A-Thon/",
     }),
   ],
 });
