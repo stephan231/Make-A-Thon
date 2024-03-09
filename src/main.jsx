@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/"
+          path="/Make-A-Thon"
           element={
             <div className="bg">
               <Navbar />
