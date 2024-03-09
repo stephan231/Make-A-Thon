@@ -62,7 +62,7 @@ const Navbar = () => {
       label: `${id} - Navbar`,
     });
     if (window.location.pathname != "/") {
-      window.open(`/${id}`, "_self");
+      window.open(`/MAKE-A-THON/${id}`, "_self");
     }
     setTimeout(() => {
       document.querySelector(id).scrollIntoView({ behaviour: "smooth" });

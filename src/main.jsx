@@ -24,16 +24,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route
+        {/* <Route
           path="*"
           element={
             <div className="bg-error">
               <Navbar /> <Error />
             </div>
           }
-        />
+        /> */}
         <Route
-          path="/Make-A-Thon"
+          path="/MAKE-A-THON/"
           element={
             <div className="bg">
               <Navbar />
@@ -41,17 +41,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        <Route
-          path="/events"
+        {/* <Route
+          path="MAKE-A-THON/events"
           element={
             <div className="events-bg">
               <Navbar />
               <Events />
             </div>
           }
-        />
+        /> */}
         <Route
-          path="/Make-A-Thon/guidelines"
+          path="/MAKE-A-THON/guidelines"
           element={
             <div className="guidelines-bg">
               <Navbar />
@@ -59,8 +59,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        <Route
-          path="/set2"
+        {/* <Route
+          path="/MAKE-A-THON/set2"
           element={
             <div className="set2-bg">
               <Navbar />
@@ -69,34 +69,34 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/set1"
+          path="/MAKE-A-THON/set1"
           element={
             <div className="set1-bg">
               <Navbar />
               <Set1 />
             </div>
           }
-        />
-        <Route
-          path="/about"
+        /> */}
+        {/* <Route
+          path="/MAKE-A-THON/about"
           element={
             <div>
               <Navbar />
               <About />
             </div>
           }
-        />
-        <Route
-          path="/judges"
+        /> */}
+        {/* <Route
+          path="/MAKE-A-THON/judges"
           element={
             <div>
               <Navbar />
               <Judges />
             </div>
           }
-        />
-        <Route path="/qr/verify/:id" element={<Verify />} />
-        <Route path="/login" element={<Login />} />
+        /> */}
+        {/* <Route path="/qr/verify/:id" element={<Verify />} />
+        <Route path="/login" element={<Login />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

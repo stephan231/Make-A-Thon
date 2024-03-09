@@ -397,9 +397,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1vw;
-  background-color: #4d4855;
-  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
-  background-image: url("/images/planet2.webp");
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  /* background-image: url("/images/guide.png"); */
   isolation: isolate;
   transition: all 0.1s linear;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -597,6 +597,25 @@
     font-size: 5vw;
   }
 }
+.right_side .box {
+  /* margin-top: 1vh; */
+  position: relative;
+  height: fit-content;
+  padding: 1vw;
+  background-repeat: no-repeat;
+  border-radius: 1vw;
+  background-color: #4d4855;
+  background-image: url("/images/motherboard.webp");
+  isolation: isolate;
+  overflow: hidden;
+  border: 0.2vw solid black;
+  transition: all 0.1s linear;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    border-radius: 4vw;
+    padding: 2vh 5vw;
+  }
+}
 
 .right_side .col3 {
   /* margin-top: 1vh; */
@@ -617,28 +636,48 @@
     padding: 2vh 5vw;
   }
 }
+
+/* Popup container */
 .popup {
-  display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Popup content */
 .popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  max-width: 400px; /* Adjust the width as needed */
+  width: 100%;
   text-align: center;
 }
 
-.close {
+/* Close button */
+/* Close icon */
+.close-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 325px;
+  right: 580px;
   cursor: pointer;
+  width: 24px; /* Adjust icon size as needed */
+  height: 24px;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    top: 300px;
+    right: 10px;
+  }
+}
+
+.close-icon:hover {
+  fill: #000; /* Adjust icon color on hover */
 }
 
 .right_side .col3::after {
@@ -714,8 +753,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1vw;
-  background-color: #537895;
-  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-blend-mode: multiply, multiply;
   isolation: isolate;
   overflow: hidden;
   transition: all 0.1s linear;

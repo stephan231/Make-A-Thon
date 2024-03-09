@@ -14,6 +14,15 @@ import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-whit
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
 
 const hero = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupContent, setPopupContent] = useState("");
+  const ps1Content =
+    "Create a cost-effective and efficient hardware system in agriculture, food technology, and rural development.";
+  const ps2Content =
+    "Development of an automated health monitoring system and implementation..";
+  const ps3Content =
+    "Create a smart waste management and disposal system facing challenges including inadequate waste collection & improper disposal..";
+
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -90,6 +99,46 @@ const hero = () => {
       clearInterval(interval);
     };
   }, []);
+  const handleDomainClick = (content) => {
+    setPopupContent(content);
+    setShowPopup(true);
+  };
+
+  // Event handler for closing the popup
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  // JSX for the popup/modal
+  // JSX for the popup/modal
+  // JSX for the popup/modal
+  const Popup = ({ content, onClose }) => (
+    <div className="popup">
+      <div className="popup-content">
+        {/* Close icon */}
+        <span className="close-icon" onClick={onClose}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+        {/* Popup content */}
+        <p>{content}</p>
+      </div>
+    </div>
+  );
+
   return (
     <React.Fragment>
       <div className="parent_hero">
@@ -195,7 +244,7 @@ const hero = () => {
               </h3>
               <p
                 className="text2"
-                onClick={() => handleCardClicks("/guidelines")}
+                onClick={() => handleCardClicks("/MAKE-A-THON/guidelines")}
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
@@ -230,25 +279,34 @@ const hero = () => {
             </div> */}
             {/* -------------------------- Column 3 * ---------------------------------- */}
             <div className="col3 animated-div">
+              {/* {showPopup && (
+                <Popup content={ps2Content} onClose={handleClosePopup} />
+              )} */}
               <div className="flex justify-items-start">
                 <h3 className="text7">Problem Statements</h3>
               </div>
-              <p className="text8" onClick={() => handleCardClicks("/set1")}>
-                Agriculture Domain{" "}
-                <ArrowRightBlack
-                  id="openPopupButton"
-                  className="arrow-right-icon"
-                />
-              </p>
-              <p className="text9" onClick={() => handleCardClicks("/set2")}>
-                Health Monitoring Domain{" "}
+              <p
+                className="text8"
+                onClick={() => handleDomainClick(ps2Content)}
+              >
+                Healthcare Domain{" "}
                 <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p className="text9" onClick={() => handleCardClicks("/set2")}>
-                Smart waste management Domain{" "}
+              <p
+                className="text8"
+                onClick={() => handleDomainClick(ps1Content)}
+              >
+                Agriculture&FoodTech Domain{" "}
                 <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p className="text9" onClick={() => handleCardClicks("/set2")}>
+              <p
+                className="text8"
+                onClick={() => handleDomainClick(ps3Content)}
+              >
+                Smart Automation Domain{" "}
+                <ArrowRightBlack className="arrow-right-icon" />
+              </p>
+              <p className="text8">
                 Open Domain <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>
@@ -283,7 +341,8 @@ const hero = () => {
       <Schedule />
       <div className="bg-sep"></div>
       <Sponsors />
-      <Footer />
+      <Footer />{" "}
+      {showPopup && <Popup content={popupContent} onClose={handleClosePopup} />}
     </React.Fragment>
   );
 };

@@ -157,7 +157,7 @@ const faqs = () => {
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is the team size to participate in the Hack-A-Tank?
+              What is the team size to participate in the MAke-A-Thon?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"

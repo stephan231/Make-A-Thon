@@ -9,5 +9,5 @@ export default defineConfig({
       svgrOptions: {},
     }),
   ],
-  base: "/Make-A-Thon/",
+  base: "/MAKE-A-THON/",
 });
