@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="parent">
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
-            <img src="./images/diamond.webp" className="logo" alt="Logo" />
+            <img src="./images/EEE.png" className="logo" alt="Logo" />
             MAKE-A-THON
             <div className="socials">
               <div className="insta">
@@ -151,9 +151,9 @@ const Navbar = () => {
               <p onClick={() => handleScroll("#contact")}>Contact</p>
             </li>
             <li>
-              {/* <p>
+              <p>
                 <a href="./guidelines">Guidelines</a>
-              </p> */}
+              </p>
             </li>
           </ul>
           <div className="last">
@@ -173,11 +173,14 @@ const Navbar = () => {
               onClick={() => window.open("/", "_self")}
             >
               <img src="./images/diamond.webp" width="30vw" alt="logo" />
-              Hackathon
+              MAKE-A-Thon
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
-                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeG3ddZAsaSg8jLTzK-B8VKtfS9tDrfSxzif8-FjF42jz0XTQ/viewform"
+                  target="_blank"
+                >
                   Register
                 </a>
               </h2>

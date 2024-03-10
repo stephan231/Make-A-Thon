@@ -54,7 +54,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/MAKE-A-THON/guidelines"
           element={
             <div className="guidelines-bg">
-              <Navbar />
+              {/* <Navbar /> */}
               <Guildelines />
             </div>
           }
