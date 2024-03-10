@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="parent">
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
-            <img src="./images/EEE.png" className="logo" alt="Logo" />
+            <img src="./images/diamond.webp" className="logo" alt="Logo" />
             MAKE-A-THON
             <div className="socials">
               <div className="insta">
@@ -121,7 +121,7 @@ const Navbar = () => {
                   }}
                 />
               </div>
-              <div className="discord-icon">
+              {/* <div className="discord-icon">
                 <SocialIcon
                   onClick={handleDiscord}
                   network="discord"
@@ -130,7 +130,7 @@ const Navbar = () => {
                     width: "3vw",
                   }}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -150,11 +150,11 @@ const Navbar = () => {
             <li>
               <p onClick={() => handleScroll("#contact")}>Contact</p>
             </li>
-            <li>
+            {/* <li>
               <p>
                 <a href="./guidelines">Guidelines</a>
               </p>
-            </li>
+            </li> */}
           </ul>
           <div className="last">
             <div className="last">

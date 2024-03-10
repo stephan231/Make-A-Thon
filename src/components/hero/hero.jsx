@@ -154,7 +154,7 @@ const hero = () => {
             <div>
               <div>St. Joseph's</div>
             </div>
-            Group of Institution
+            Group of Institutions
           </div>
           <img
             src="./images/EEE.png"
@@ -175,8 +175,8 @@ const hero = () => {
               {/* <p className="tag1"> A National Level 24 Hour Hackathon</p>
               <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                National <span> Level 24 hour Hackathon </span>
-                showcasing innovative solutions
+                "Innovate the<span> FUTURE </span> by showcasing innovative
+                solutions"
                 {/* <br /> and tech talents from across the country */}
               </p>
             </div>
@@ -317,7 +317,7 @@ const hero = () => {
             <div
               className="col4 animated-div"
               onClick={() =>
-                window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
+                window.open("https://maps.app.goo.gl/Ls9xLQh6uioQApaB7")
               }
             >
               <h3 className="text10">
