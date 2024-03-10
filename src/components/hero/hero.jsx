@@ -244,7 +244,9 @@ const hero = () => {
               </h3>
               <p
                 className="text2"
-                onClick={() => handleCardClicks("/MAKE-A-THON/guidelines")}
+                onClick={() =>
+                  handleCardClicks("https://stephan231.github.io/Guidelines/")
+                }
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
