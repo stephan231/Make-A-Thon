@@ -22,7 +22,8 @@ const hero = () => {
     "Development of an automated health monitoring system and implementation..";
   const ps3Content =
     "Create a smart waste management and disposal system facing challenges including inadequate waste collection & improper disposal..";
-
+  const ps4Content =
+    "Development of hardware system in Fields like disaster management /smart vehicle/ robotics and drones/ transportation and logistics/ renewable and sustainable energy.";
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -193,7 +194,7 @@ const hero = () => {
             <div className="register_now">
               <div>
                 <a href="./images/MAKEATHON.pptx" download>
-                  PPT TEMPLATE{" "}
+                  PPT &nbsp; TEMPLATE{" "}
                 </a>
               </div>
               <div>
@@ -235,8 +236,15 @@ const hero = () => {
             <div className="col1 animated-div">
               <h3 className="text">
                 <div>
+                  <div>MAKE-A-THON</div>
+                </div>
+                {/* <Calender className="calender-icon" /> */}
+              </h3>
+              <br />
+              <h3 className="text">
+                <div>
                   <div>
-                    <div> 5</div> <div> th</div>{" "}
+                    <div> 5&6</div> <div> th</div>{" "}
                   </div>{" "}
                   April
                 </div>
@@ -308,7 +316,10 @@ const hero = () => {
                 Smart Automation Domain{" "}
                 <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p className="text8">
+              <p
+                className="text8"
+                onClick={() => handleDomainClick(ps4Content)}
+              >
                 Open Domain <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>

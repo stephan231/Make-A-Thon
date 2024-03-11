@@ -191,6 +191,7 @@ const schedule = () => {
               </p>
               <span className="circle-mobile"></span>
             </div>
+
             <div className="container-mobile" id="timeline-container">
               <h2 className="container-title-mobile">Abstract Submission</h2>{" "}
               <h1 className="date-mobile">
@@ -214,7 +215,7 @@ const schedule = () => {
               <span className="circle-mobile "></span>
             </div>
             <div className="container-mobile ">
-              <h2 className="container-title-mobile">Finalists Annoncements</h2>
+              <h2 className="container-title-mobile">Registration Closes</h2>
               <h1 className="date-mobile">
                 <div>
                   MARCH
@@ -233,7 +234,9 @@ const schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile">
-              <h2 className="container-title-mobile">Registration Closes</h2>
+              <h2 className="container-title-mobile">
+                Shortlisted Team Announcements
+              </h2>
               <h1 className="date-mobile">
                 <div>
                   MARCH

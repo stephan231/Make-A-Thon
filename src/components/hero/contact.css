@@ -176,7 +176,7 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/images/vishnu.JPG");
+  background-image: url("/images/vishnu3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -201,12 +201,43 @@
     background-color: rgb(0, 0, 0, 0.7);
   }
 }
+
+.contact-card-back2::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/images/saran.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-card-back2 {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+.contact-card-back2::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1vw);
+  background-color: rgb(0, 0, 0, 0.5);
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .contact-card-back2::after {
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+}
 .contact-card-back1::before {
   content: " ";
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/images/Srinivas.JPG");
+  background-image: url("/images/srini2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -231,8 +262,30 @@
     background-color: rgb(0, 0, 0, 0.7);
   }
 }
+.contact-card-back2 {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+.contact-card-back2::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1vw);
+  background-color: rgb(0, 0, 0, 0.7);
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .contact-card-back1::after {
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+}
 .contact-card-back .contact-card-details,
-.contact-card-back1 .contact-card-details {
+.contact-card-back1 .contact-card-details,
+.contact-card-back2 .contact-card-details {
   height: 100%;
   padding-top: 2vh;
   display: flex;
@@ -246,7 +299,8 @@
 }
 
 .contact-card-back .contact-card-name,
-.contact-card-back1 .contact-card-name {
+.contact-card-back1 .contact-card-name,
+.contact-card-back2 .contact-card-name {
   font-size: 2vw;
   color: white;
   font-weight: 700;
@@ -256,6 +310,7 @@
   }
 }
 .contact-card-back .contact-card-description,
+.contact-card-back2.contact-card-description,
 .contact-card-back1 .contact-card-description {
   display: flex;
   flex-direction: column;
@@ -265,8 +320,10 @@
 }
 .contact-card-back .contact-card-phone,
 .contact-card-back1 .contact-card-phone,
+.contact-card-back2 .contact-card-phone,
 .contact-card-back .contact-card-email,
 .contact-card-back1 .contact-card-email,
+.contact-card-back2 .contact-card-email,
 .contact-card-back .contact-card-instagram,
 .contact-card-back1 .contact-card-instagram,
 .contact-card-back .contact-card-discord,
@@ -289,8 +346,10 @@
 
 .contact-card-back .contact-card-phone:hover,
 .contact-card-back1 .contact-card-phone:hover,
+.contact-card-back2 .contact-card-phone:hover,
 .contact-card-back .contact-card-email:hover,
 .contact-card-back1 .contact-card-email:hover,
+.contact-card-back2 .contact-card-email:hover,
 .contact-card-back .contact-card-instagram:hover,
 .contact-card-back1 .contact-card-instagram:hover,
 .contact-card-back .contact-card-discord:hover,

@@ -36,7 +36,7 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card">
                 <div className="contact-card-front">
-                  <img src="./images/vishnu.JPG" alt="vishnu" />
+                  <img src="./images/vishnu3.jpg" alt="vishnu" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Vishnu M</h1>
                     <h2 className="contact-card-description">
@@ -188,12 +188,168 @@ const contact = () => {
               </div>
             </div>
           </div>
+          <div>
+            <div className="contact-container">
+              <div className="contact-card2">
+                <div className="contact-card-front">
+                  <img src="./images/saran.jpg" alt="saran" />
+                  <div className="contact-card-details">
+                    <h1 className="contact-card-name">Saran P</h1>
+                    <h2 className="contact-card-description">
+                      Organizing Co-lead
+                    </h2>
+                    <h3
+                      className="contact-card-options"
+                      onClick={() => handlecontactOptions(".contact-card2")}
+                    >
+                      Contact Options{" "}
+                      <KeyboardDoubleArrowRightIcon
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                        }}
+                      />
+                    </h3>
+                  </div>
+                </div>
+                <div className="contact-card-back2">
+                  <div className="contact-card-details">
+                    <h1 className="contact-card-name">Saran P</h1>
+                    <h2 className="contact-card-description">
+                      <span
+                        className="contact-card-phone"
+                        onClick={() => {
+                          handleLaunch("contact-card-launch1");
+                          setTimeout(() => {
+                            window.open(
+                              "https://ama.whatsapp.com/send?phone=8667370075"
+                            );
+                          }, 2000);
+                        }}
+                      >
+                        <PhoneBluetoothSpeakerIcon
+                          className="phone"
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                          }}
+                        />
+                        +91 8667370075
+                        <span id="contact-card-launch1">
+                          <RocketLaunchIcon
+                            className="rocketLaunch"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                            }}
+                          />
+                        </span>
+                      </span>
+                      <span
+                        className="contact-card-email"
+                        onClick={() => {
+                          handleLaunch("contact-card-launch2");
+                          setTimeout(() => {
+                            window.open("mailto:saranprakash3112@gmail.com");
+                          }, 2000);
+                        }}
+                      >
+                        <EmailRoundedIcon
+                          className="email"
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                          }}
+                        />
+                        <h6 className="abc"> saranprakash3112@gmail.com</h6>
+                        <span id="contact-card-launch2">
+                          <RocketLaunchIcon
+                            className="rocketLaunch"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                            }}
+                          />
+                        </span>
+                      </span>
+                      {/* <span
+                        className="contact-card-instagram"
+                        onClick={() => {
+                          handleLaunch("contact-card-launch3");
+                          setTimeout(() => {
+                            window.open("https://www.instagram.com/mr._.nope");
+                          }, 2000);
+                        }}
+                      > */}
+                      {/* <InstagramIcon
+                          className="instagram"
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                          }}
+                        />
+                        @mr._.nope
+                        <span id="contact-card-launch3">
+                          <RocketLaunchIcon
+                            className="rocketLaunch"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                            }}
+                          />
+                        </span>
+                      </span> */}
+                      {/* <span
+                        className="contact-card-discord"
+                        onClick={() => {
+                          handleLaunch("contact-card-launch4");
+                          setTimeout(() => {
+                            window.open("https://discord.gg/w77zzjVkEB");
+                          }, 2000);
+                        }}
+                      >
+                        <DiscordContact
+                          className="discord"
+                          style={{
+                            width: "35px",
+                            height: "35px",
+                          }}
+                        />
+                        the_creep_27
+                        <span id="contact-card-launch4">
+                          <RocketLaunchIcon
+                            className="rocketLaunch"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                            }}
+                          />
+                        </span>
+                      </span> */}
+                    </h2>
+                    <h3
+                      className="contact-card-options"
+                      onClick={() => handlecontactOptions(".contact-card2")}
+                    >
+                      <KeyboardDoubleArrowLeftIcon
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                        }}
+                      />
+                      Back
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* -----------------------------------------Contact 2 ------------------------------------------- */}
           <div>
             <div className="contact-container">
               <div className="contact-card1">
                 <div className="contact-card-front">
-                  <img src="./images/Srinivas.JPG" alt="srinivas" />
+                  <img src="./images/srini2.jpg" alt="srinivas" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Srinivas R</h1>
                     <h2 className="contact-card-description">
