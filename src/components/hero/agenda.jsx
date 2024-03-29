@@ -3,6 +3,8 @@ import Lottie from "lottie-react";
 import "./agenda.css";
 import animationData from "../../assets/mic.json";
 
+// create separate components for Agenda, Vision, and Mission
+
 const section2 = () => {
   useEffect(() => {
     const callback = (entries) => {
