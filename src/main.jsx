@@ -77,7 +77,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         /> */}
-        {/* <Route
+        <Route
           path="/MAKE-A-THON/about"
           element={
             <div>
@@ -85,7 +85,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <About />
             </div>
           }
-        /> */}
+        /> 
         {/* <Route
           path="/MAKE-A-THON/judges"
           element={
